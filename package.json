@@ -1,0 +1,28 @@
+{
+  "name": "select-color",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ra-md/select-color.git"
+  },
+  "author": "Rafli Ramadhana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ra-md/select-color/issues"
+  },
+  "homepage": "https://github.com/ra-md/select-color#readme",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.1"
+  },
+  "dependencies": {
+    "color-convert": "^2.0.1"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
+}

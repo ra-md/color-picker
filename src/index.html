@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <section class="upload-file">
+      <div class="dropzone">
+        <div class="loading">
+          <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
+        <img src="assets/cloud-upload-alt.svg" alt="">
+        <p>Drop your image here</p>
+        <div class="local">
+          <label for="input-file" class="btn primary" id="" tabindex="0">Select your image</label>
+          <input type="file" id="input-file" accept="image/*">
+        </div>
+        <div class="url">
+          <input type="text" id="input-text" required>
+          <label for="input-text">Image url...</label>
+          <button id="url-submit" class="btn primary">submit</button>
+        </div>
+        <p class="error"></p>
+      </div>
+    </section>
+    <section class="color-picker">
+      <!-- <div class="crosshairs"></div> -->
+      <div class="canvas-area">
+        <img class="crosshairs" src="assets/crosshairs.svg">
+        <div class="canvas-overlay" style="position: absolute; z-index: 100;"></div>
+        <canvas id="myCanvas"></canvas>
+      </div>
+    </section>
+    <section class="colors">
+      <div class="color rgb">
+        <label class="color-title" for="color-input-rgb">RGB: </label>
+        <input class="color-input" id="color-input-rgb" type="text">
+      </div>
+      <div class="color hex">
+        <label class="color-title" for="color-input-hex">HEX: </label>
+        <input class="color-input" id="color-input-hex" type="text">
+      </div>
+      <div class="color cmyk">
+        <label class="color-title" for="color-input-cmyk">CMYK: </label>
+        <input class="color-input" id="color-input-cmyk" type="text">
+      </div>
+      <div class="color hsv">
+        <label class="color-title" for="color-input-hsv">HSV: </label>
+        <input class="color-input" id="color-input-hsv" type="text">
+      </div>
+      <div class="color hsl">
+        <label class="color-title" for="color-input-hsl">HSL: </label>
+        <input class="color-input" id="color-input-hsl" type="text">
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>
